@@ -36,7 +36,7 @@ async function main() {
       vm = getValuesFromPayload(github.context.payload, env);
     }    
 
-    if (vm.payload.label.name === "KPI" ) {
+    if (vm.payload && vm.payload.label.name === "KPI" ) {
       return;
     }
     // if the sender in the azure-boards bot, then exit code
