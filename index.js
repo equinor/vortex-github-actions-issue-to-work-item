@@ -38,7 +38,10 @@ async function main() {
 
     if (vm.payload && vm.payload.label.name === "KPI" ) {
       return;
-    }
+     }
+  if (vm.payload && vm.payload.issue.includes("UserStory")) {
+	  return;
+  }
     // if the sender in the azure-boards bot, then exit code
     // nothing needs to be done
     if (vm.sender_login === "azure-boards[bot]") {
