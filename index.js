@@ -39,6 +39,7 @@ async function main() {
     if (vm.payload && vm.payload.label.name === "KPI" ) {
       return;
      }
+     console.log("XXXXXXXXXXXX"+ vm.title);
   if (vm.payload && vm.title.includes("UserStory")) {
 	  return;
   }
