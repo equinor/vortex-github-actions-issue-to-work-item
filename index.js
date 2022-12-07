@@ -39,7 +39,7 @@ async function main() {
     if (vm.payload && vm.payload.label.name === "KPI" ) {
       return;
      }
-  if (vm.payload && vm.payload.issue.includes("UserStory")) {
+  if (vm.payload && vm.payload.title.includes("UserStory")) {
 	  return;
   }
     // if the sender in the azure-boards bot, then exit code
